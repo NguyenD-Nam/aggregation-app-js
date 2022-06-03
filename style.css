@@ -110,7 +110,7 @@ button{
     margin: 25px 0;
 }
 
-.repo__card > div:first-child{
+.repo__card > div{
     width: 100%;
     margin: 25px 10px;
 }
