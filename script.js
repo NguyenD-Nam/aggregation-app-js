@@ -150,15 +150,6 @@ function showRepos() {
                 delButton.parentNode.remove();
             }, 500);
         }
-
-        /* Info button */
-        let infoButton = document.createElement('button');
-        let description = document.createElement('div');
-        description.classList.add('description');
-        infoButton.innerHTML = '<i class="fas fa-info"></i>';
-        infoButton.onclick = () => {
-            description.classList.toggle = 'showInfo';
-        }
         
         /* Title of repo card */
         let repoTitle = document.createElement('a');
@@ -191,14 +182,10 @@ function showRepos() {
         let repoItemLeft = document.createElement('div');
         repoItemLeft.append(repoTitle);
         repoItemLeft.append(repoDetails);
-
-        let repoItemRight = document.createElement('div');
-        repoItemRight.append(infoButton);
-        repoItemRight.append(delButton);
         
         repoItem.append(repoAvatar);
         repoItem.append(repoItemLeft);
-        repoItem.append(repoItemRight);
+        repoItem.append(delButton);
 
         fragment.append(repoItem);
         
