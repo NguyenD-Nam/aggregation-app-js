@@ -75,7 +75,7 @@ button{
     font-size: 17px;
 }
 
-.sort__btn:first-child{
+.sort-button--active{
     background-color: var(--light-blue);
 }
 
